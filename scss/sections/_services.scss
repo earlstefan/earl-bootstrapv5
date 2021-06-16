@@ -1,0 +1,37 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.services-box {
+  @include media-breakpoint-down(md) {
+    &:nth-child(odd) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    margin-top: 0;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+    }
+
+    .icon {
+      @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+      }
+
+      font-size: 1.5rem;
+      color: $primary;
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+  }
+}
