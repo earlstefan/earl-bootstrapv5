@@ -4355,7 +4355,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.5rem;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -4381,13 +4381,13 @@ textarea.form-control-lg {
 }
 .accordion-button::after {
   flex-shrink: 0;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
   margin-left: auto;
   content: "";
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230891b2'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-size: 1.25rem;
+  background-size: 1.875rem;
   transition: transform 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4438,7 +4438,7 @@ textarea.form-control-lg {
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 1.5rem 1.5rem;
 }
 
 .accordion-flush .accordion-collapse {
@@ -10775,6 +10775,10 @@ textarea.form-control-lg {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -11001,6 +11005,47 @@ textarea.form-control-lg {
 .testimonials__name p {
   text-transform: capitalize;
   padding-bottom: 2rem;
+}
+
+.portfolio {
+  padding: 4rem 0;
+}
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  border-top: 1rem solid #0891b2;
+}
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-box .portfolio-info {
+  background-color: rgba(8, 145, 178, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  color: #fff;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+}
+.portfolio-box:hover portfolio-info {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
