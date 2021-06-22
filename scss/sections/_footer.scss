@@ -1,0 +1,66 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $footer;
+}
+
+//Contact-box Content
+
+.contact-box {
+  position: relative;
+
+  &__icon {
+    img {
+      width: 2rem;
+      padding-top: 0.5rem;
+
+      @include media-breakpoint-up(sm) {
+        width: 4rem;
+      }
+    }
+  }
+
+  &__info {
+    padding: 0.4rem;
+    font-weight: 600;
+
+    &--title {
+      color: $white;
+      text-decoration: none;
+      font-size: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &--subtitle {
+    font-size: 0.9rem;
+    color: $gray-600;
+    text-decoration: none;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
+  }
+}
+
+//Social Media Content
+
+.footer-sm {
+  a {
+    color: $white;
+
+    i {
+      font-size: 1rem;
+      margin-left: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
